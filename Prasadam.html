@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catering Services | Omkareshwar Das</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <style>
+    :root {
+      --highlight: #e36111;
+      --bg-light: #fff8f0;
+      --text-dark: #333;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--bg-light);
+      margin: 0;
+      color: var(--text-dark);
+    }
+
+    .section-title {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #1e1e1e;
+      position: relative;
+    }
+
+    .section-title p {
+      font-size: 16px;
+      color: #444;
+      margin-top: 10px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  .bulk-order-button {
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  .bulk-order-button a {
+    background-color: #800000; /* Maroon */
+    color: white;
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+
+  .bulk-order-button a:hover {
+    background-color: #660000;
+  }
+
+    .menu-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .menu-item {
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+      max-width: 260px;
+      flex: 1 1 240px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .menu-item img {
+      height: 150px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .menu-item h4 {
+      color: var(--highlight);
+      font-size: 20px;
+      margin: 15px 0 5px;
+    }
+
+    .menu-item p {
+      color: #555;
+      font-size: 15px;
+    }
+
+    .form-section {
+      background: #fff;
+      padding: 40px 20px;
+      max-width: 700px;
+      margin: 0 auto 60px;
+      border-radius: 16px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+    }
+
+    .form-section h2 {
+      text-align: center;
+      color: var(--highlight);
+      margin-bottom: 20px;
+    }
+header h3 {
+    margin-right: 60px !important;
+}
+header h3 {
+    margin-right: 60px !important;
+}
+
+    form {
+      display: grid;
+      gap: 15px;
+    }
+
+    form input, form textarea {
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    form button {
+      background-color: var(--highlight);
+      color: white;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+header .container {
+  padding-left: 90px !important;  /* increase or adjust */
+}
+#header .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* brings items together */
+  gap: 30px; /* adjust gap here */
+}
+   /* Increase space between "Omkareshwar Das" and the menu */
+.navbar-brand, 
+#navbar-brand, 
+.logo-text {
+    margin-right: 40px !important; /* Increase or decrease here */
+}
+
+    form button:hover {
+      background-color: #c85005;
+    }
+	.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: orange;
+}
+
+.nav-link.active {
+  color: orange;
+}
+
+  </style>
+  <!-- icons & shared site CSS -->
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+<!-- Navbar -->
+ <header id="header" class="header header-visible d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between align-items-center" style="width: 100%; padding: 0 20px; box-sizing: border-box;">
+      <div>
+        <h3 style="margin: 0; color: #fff;">Omkareshwar Das</h3>
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul style="list-style: none; display: flex; gap: 20px; margin: 0; padding: 0;">
+          <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+                    <li><a class="nav-link scrollto active" href="upcoming-events.html">Upcoming Events</a></li>
+
+          <li><a class="nav-link scrollto" href="services.html">Services</a></li>
+          <li><a class="nav-link scrollto" href="gallery.html">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="donation.html">Donation</a></li>
+          <li><a class="nav-link scrollto" href="bookkatha.html">Book Katha</a></li>
+          <li><a class="nav-link scrollto" href="pooja.html">Pooja Booking</a></li>
+          <li><a class="nav-link scrollto" href="Prasadam.html">Prasadam</a></li>
+          <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+<div class="section-title">
+  <h2>Sri Vrinda’s Satvik Catering Services</h2>
+
+  <!-- ✅ Bulk Order Button Added Here -->
+  <div class="bulk-order-button">
+    <a href="bulkorder.html">📦Click here for Bulk Order</a>
+  </div>
+
+  <p>Experience the essence of devotion through our pure and delicious Satvik offerings — made with love and served with humility.</p>
+  
+  <p style="color: #e36111; font-weight: bold; margin-bottom: 20px;">
+    ✅ Bulk orders are also available for special events and festivals. Contact us for custom packages!
+  </p>
+</div>
+
+<div class="menu-grid">
+  <!-- Full Meals -->
+  <div class="menu-item"><img src="assets\img\prasadam\khichdi.jpg" alt="Khichdi"><div class="content"><h4>Khichdi</h4><p>₹80 per plate</p></div></div>
+  <div class="menu-item"><img src="assets\img\prasadam\puri_sabji.jpg" alt="Puri Sabzi"><div class="content"><h4>Puri & Aloo Sabzi</h4><p>₹100 per plate</p></div></div>
+  <div class="menu-item"><img src="assets\img\prasadam\panner_roti.jpg" alt="Paneer"><div class="content"><h4>Paneer Sabzi & Roti</h4><p>₹120 per plate</p></div></div>
+  <div class="menu-item"><img src="assets\img\prasadam\rajma.jpg" alt="Rajma Chawal"><div class="content"><h4>Rajma Chawal</h4><p>₹90 per plate</p></div></div>
+  <div class="menu-item"><img src="assets\img\prasadam\kadhi_chawal.jpg" alt="Kadhi Chawal"><div class="content"><h4>Kadhi Chawal</h4><p>₹85 per plate</p></div></div>
+  <div class="menu-item"><img src="assets\img\prasadam\daal_roti.jpg" alt="Dal Roti Rice"><div class="content"><h4>Dal, Roti & Rice</h4><p>₹90 per plate</p></div></div>
+  <div class="menu-item"><img src="assets\img\prasadam\vegpulao.jpg" alt="Pulao"><div class="content"><h4>Vegetable Pulao</h4><p>₹80 per plate</p></div></div>
+
+  <!-- Sides -->
+  <div class="menu-item"><img src="assets\img\prasadam\boondi.jpg" alt="Boondi Raita"><div class="content"><h4>Boondi Raita</h4><p>₹40 per bowl</p></div></div>
+  <div class="menu-item"><img src="assets\img\prasadam\Panchamrit.jpg" alt="Panchamrit"><div class="content"><h4>Panchamrit</h4><p>₹30 per serving</p></div></div>
+  <div class="menu-item"><img src="assets\img\prasadam\fruit_prasadam.jpg" alt="Fruit Prasadam"><div class="content"><h4>Fruit Prasadam</h4><p>₹70 per plate</p></div></div>
+
+  <!-- Sweets -->
+  <div class="menu-item"><img src="assets\img\prasadam\suzihalwa.jpg" alt="Halwa"><div class="content"><h4>Suji Halwa</h4><p>₹50 per plate</p></div></div>
+  <div class="menu-item"><img src="assets\img\prasadam\sweet.jpg" alt="Sweets"><div class="content"><h4>Assorted Sweets</h4><p>₹60 per plate</p></div></div>
+
+  <!-- Snacks -->
+  <div class="menu-item"><img src="assets\img\prasadam\sabudanavada.jpg" alt="Sabudana Vada"><div class="content"><h4>Sabudana Vada</h4><p>₹50 per plate</p></div></div>
+  <div class="menu-item"><img src="assets\img\prasadam\kachori.jpg" alt="Kachori"><div class="content"><h4>Kachori with Aloo Sabzi</h4><p>₹70 per plate</p></div></div>
+  <div class="menu-item"><img src="assets\img\prasadam\samaktikki.jpg" alt="Samak Tikki"><div class="content"><h4>Samak Rice Tikki</h4><p>₹60 per plate</p></div></div>
+  <div class="menu-item"><img src="assets\img\prasadam\vegetablecutlet.jpg" alt="Cutlet"><div class="content"><h4>Vegetable Cutlet</h4><p>₹60 per plate</p></div></div>
+  <div class="menu-item"><img src="assets\img\prasadam\fararipattice.jpg" alt="Farali Pattice"><div class="content"><h4>Farali Pattice</h4><p>₹65 per plate</p></div></div>
+  <div class="menu-item"><img src="assets\img\prasadam\methi.jpg" alt="Methi Thepla"><div class="content"><h4>Methi Thepla with Chutney</h4><p>₹55 per plate</p></div></div>
+  <div class="menu-item"><img src="assets\img\prasadam\aaloochat.jpg" alt="Aloo Chaat"><div class="content"><h4>Aloo Chaat</h4><p>₹50 per plate</p></div></div>
+  <div class="menu-item"><img src="assets\img\prasadam\lassi.jpg" alt="Lassi"><div class="content"><h4>Sweet Lassi</h4><p>₹40 per glass</p></div></div>
+</div>
+
+<section class="form-section">
+  <h2>Book Our Catering Service</h2>
+  <form action="https://api.whatsapp.com/send" method="get" target="_blank">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="tel" name="phone" placeholder="Phone Number" required />
+    <input type="text" name="event" placeholder="Event Type (e.g. Wedding, Katha, Bhog)" />
+    <textarea name="message" rows="4" placeholder="Any specific requests or menu items?"></textarea>
+    <button type="submit">Submit Booking via WhatsApp</button>
+  </form>
+</section>
+
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="footer-container">
+      <div class="footer-col footer-brand">
+        <div class="footer-logo">Omkareshwar Das</div>
+        <div class="footer-contact">
+          <p><strong>Contact:</strong> <a href="tel:8197317345" style="color:#fff;text-decoration:none;">8197317345</a></p>
+          <p><strong>Address:</strong>  HARE KRISHNA JAGANNATH TEMPLE, 1260, 9th Cross Rd, opp. Sangeetha Mobiles, Ananth Nagar Phase 2, Phase 1, Kammasandra, Electronic City, Bengaluru, Karnataka 560100</p>
+        </div>
+      </div>
+
+      <div class="footer-col footer-links">
+        <h4 style="margin-top:0;color:#fff;">Quick links</h4>
+        <p><a href="index.html#hero">Home</a></p>
+        <p><a href="index.html#about">About</a></p>
+        <p><a href="index.html#services">Services</a></p>
+        <p><a href="upcoming-events.html">Upcoming Events</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h4 style="margin-top:0;color:#fff;">Connect</h4>
+        <div class="social-icons" aria-label="Social links">
+          <a href="https://youtube.com/@omkareshwardas?si=SriptPGJpg0oWGui" target="_blank" rel="noopener noreferrer" title="YouTube"><i class="bi bi-youtube"></i> YouTube</a><br>
+          <a href="https://www.facebook.com/gaugovindseva/" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="bi bi-facebook"></i> Facebook</a><br>
+          <a href="https://www.instagram.com/omkareshwardas_official/" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="bi bi-instagram"></i> Instagram</a>
+        </div>
+      </div>
+
+      <div class="footer-col footer-qr" style="text-align:center;">
+        <h4 style="margin-top:0;color:#fff;">Join our WhatsApp group</h4>
+        <a href="https://chat.whatsapp.com/GWJ047kEOcb7XfualOOpdS?mode=wwt" target="_blank" rel="noopener noreferrer" title="Join WhatsApp group">
+          <img src="assets/img/WhatsAppQR.jpeg" alt="WhatsApp group QR code - Join Omkareshwar Das group" />
+        </a>
+        <div style="margin-top:8px;"><a href="https://chat.whatsapp.com/GWJ047kEOcb7XfualOOpdS?mode=wwt" target="_blank" rel="noopener noreferrer" style="color:#fff;text-decoration:underline;">Click/tap to join</a></div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:1rem;color:#fff8ea;">&copy; <span id="year"></span> Omkareshwar Das — All Rights Reserved</div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up-short" style="font-size:22px;"></i></button>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

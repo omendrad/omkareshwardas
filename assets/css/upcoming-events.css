@@ -1,0 +1,71 @@
+/* Styles for Upcoming Events page */
+.events-wrapper {
+  background: linear-gradient(180deg, #fffaf0 0%, #fff 100%);
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+}
+
+.events-list .list-group {
+  border: 0;
+  padding: 0;
+}
+
+.events-list .list-group-item {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin-bottom: 18px;
+}
+
+.event-item {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 18px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+.event-item:hover { transform: translateY(-6px); box-shadow: 0 14px 30px rgba(0,0,0,0.09); }
+
+.event-date {
+  min-width: 92px;
+  text-align: center;
+  background: linear-gradient(180deg, #e36111 0%, #ff8a3d 100%);
+  color: #fff;
+  padding: 10px 8px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+.event-date .day { font-size: 20px; line-height: 1; }
+.event-date .month { font-size: 12px; text-transform: uppercase; opacity: 0.95; }
+
+.event-content h4 { margin: 0 0 6px 0; font-size: 18px; color: #222; }
+.event-meta { color: #666; font-size: 14px; margin-bottom: 8px; }
+.event-desc { color: #444; font-size: 15px; line-height: 1.45; }
+
+.event-actions { margin-top: 10px; }
+.event-actions a { color: var(--accent-color); font-weight:600; text-decoration:none; }
+
+@media (max-width: 576px) {
+  .event-item { flex-direction: column; }
+  .event-date { min-width: auto; display: inline-block; width: auto; padding: 8px 12px; align-self: flex-start; }
+}
+
+/* decorative page heading */
+.events-heading { text-align:center; margin-bottom: 22px; }
+.events-sub { color:#6b5b46; margin-bottom: 28px; }
+
+/* Header show/hide on scroll (page-specific) */
+.header {
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+.header.header-hidden {
+  transform: translateY(-120%);
+  box-shadow: none !important;
+}
+.header.header-visible {
+  transform: translateY(0);
+}

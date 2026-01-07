@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Divine Kirtan</title>
+  <!-- GLightbox CSS -->
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      font-family: 'Segoe UI', sans-serif;
+      color: #2e2e2e;
+}
+
+.overlay {
+      backdrop-filter: blur(8px);
+      background-color: rgba(255, 255, 255, 0.85);
+      min-height: 100vh;
+      padding: 50px 20px;
+}
+
+.container {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+}
+
+h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #000000;
+}
+
+p.description {
+      font-size: 18px;
+      color: #444;
+      margin-bottom: 40px;
+}
+
+form {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      margin-top: 40px;
+}
+/* ========================================= */
+/*      FINAL WORKING HEADER FIXED CSS       */
+/* ========================================= */
+
+/* Remove ALL left–right padding from header container */
+.header .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important; /* removes bootstrap limits */
+}
+
+/* Align title and menu properly */
+.header {
+    padding: 10px 20px; /* keep header height stable */
+}
+
+/* Title */
+.header-title {
+    margin: 0;
+    padding-left: 90px;   /* small space from left */
+    padding-right: 10px;  /* LITTLE GAP before Home */
+    color: #fff;
+    font-size: 28px;
+    white-space: nowrap;
+}
+
+/* Fix navbar alignment */
+.navbar {
+    margin-left: auto;   /* pushes menu to the RIGHT */
+}
+
+/* Spacing between menu items */
+.navbar ul {
+    display: flex;
+    gap: 26px;        /* adjust as needed */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Nav links */
+.navbar .nav-link {
+    color: #fff;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: orange;
+}
+
+/* Space between menu items */
+
+
+
+
+/* ========================================= */
+/*           Other unchanged CSS             */
+/* ========================================= */
+
+label {
+      font-weight: 600;
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 5px;
+}
+
+input, textarea, select {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+}
+
+textarea {
+      resize: vertical;
+      min-height: 100px;
+}
+
+button {
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #e36111;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+}
+
+button:hover {
+      background-color: #d44f00;
+}
+
+footer {
+      background-color: #d44f00;
+      color: white;
+      text-align: center;
+      padding: 16px 0;
+      margin-top: 60px;
+}
+
+.gallery {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+}
+
+.gallery a {
+      width: 240px;
+      height: 160px;
+      display: block;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      position: relative;
+}
+
+.gallery img,
+.gallery video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+}
+
+.video-thumb {
+      position: relative;
+      width: 100%;
+      height: 100%;
+}
+
+.play-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 36px;
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px 14px;
+      border-radius: 50%;
+      pointer-events: none;
+}
+
+  </style>
+</head>
+<body>
+<!-- Navbar -->
+ <header id="header" class="header header-visible d-flex align-items-center fixed-top">
+  <div class="container d-flex justify-content-between align-items-center">
+
+      <h3 class="header-title">Omkareshwar Das</h3>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="about.html">About</a></li>
+          <li><a class="nav-link scrollto active" href="upcoming-events.html">Upcoming Events</a></li>
+          <li><a class="nav-link scrollto" href="services.html">Services</a></li>
+          <li><a class="nav-link scrollto" href="gallery.html">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="donation.html">Donation</a></li>
+          <li><a class="nav-link scrollto" href="bookkatha.html">Book Katha</a></li>
+          <li><a class="nav-link scrollto" href="pooja.html">Pooja Booking</a></li>
+          <li><a class="nav-link scrollto" href="Prasadam.html">Prasadam</a></li>
+          <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+  </div>
+</header>
+
+  <div class="overlay">
+    <div class="container">
+      <h1>🎶 Book a Divine Kirtan</h1>
+      <p class="description">Experience the joy of sankirtan! Glimpse some of our previous kirtan moments below:</p>
+
+      <!-- Kirtan Gallery -->
+      <div class="gallery">
+        <a href="assets/img/k1glimse.jpeg" class="glightbox" data-gallery="kirtan">
+          <img src="assets/img/k1glimse.jpeg" alt="Kirtan Glimpse 1">
+        </a>
+
+        <a href="assets/img/kirtan4ved.mp4" class="glightbox" data-gallery="kirtan" data-type="video">
+          <div class="video-thumb">
+            <video src="assets/img/kirtan4ved.mp4" muted></video>
+            <div class="play-icon">▶</div>
+          </div>
+        </a>
+
+        <a href="assets/img/vediosnphotos/k2.MOV" class="glightbox" data-gallery="kirtan" data-type="video">
+          <div class="video-thumb">
+            <video src="assets/img/vediosnphotos/k2.MOV" muted></video>
+            <div class="play-icon">▶</div>
+          </div>
+        </a>
+
+        <a href="assets/img/vediosnphotos/k1.MOV" class="glightbox" data-gallery="kirtan" data-type="video">
+          <div class="video-thumb">
+            <video src="assets/img/vediosnphotos/k1.MOV" muted></video>
+            <div class="play-icon">▶</div>
+          </div>
+        </a>
+
+        <a href="assets/img/kirtanved.mp4" class="glightbox" data-gallery="kirtan" data-type="video">
+          <div class="video-thumb">
+            <video src="assets/img/kirtanved.mp4" muted></video>
+            <div class="play-icon">▶</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Booking Form -->
+      <form id="kirtanForm">
+        <label for="name">Your Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="phone">Contact Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your email (optional)">
+
+        <label for="kirtan-type">Select Kirtan Type</label>
+        <select id="kirtan-type" name="kirtan-type" required>
+          <option value="">-- Choose a Kirtan Type --</option>
+          <option value="Harinam Sankirtan">Harinam Sankirtan</option>
+          <option value="Bhajan Sandhya">Bhajan Sandhya</option>
+          <option value="Temple Kirtan">Temple Kirtan</option>
+          <option value="Nam Sankirtan">Nam Sankirtan</option>
+          <option value="Special Occasion Kirtan">Special Occasion Kirtan</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="details">Additional Details (Location, Date, Notes)</label>
+        <textarea id="details" name="details" placeholder="Mention venue, date, time, etc."></textarea>
+
+        <button type="submit">Submit via WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="footer-container">
+      <div class="footer-col footer-brand">
+        <div class="footer-logo">Omkareshwar Das</div>
+        <div class="footer-contact">
+          <p><strong>Contact:</strong> <a href="tel:8197317345" style="color:#fff;text-decoration:none;">8197317345</a></p>
+          <p><strong>Address:</strong>  HARE KRISHNA JAGANNATH TEMPLE, 1260, 9th Cross Rd, opp. Sangeetha Mobiles, Ananth Nagar Phase 2, Phase 1, Kammasandra, Electronic City, Bengaluru, Karnataka 560100</p>
+        </div>
+      </div>
+
+      <div class="footer-col footer-links">
+        <h4 style="margin-top:0;color:#fff;">Quick links</h4>
+        <p><a href="index.html#hero">Home</a></p>
+        <p><a href="index.html#about">About</a></p>
+        <p><a href="index.html#services">Services</a></p>
+        <p><a href="upcoming-events.html">Upcoming Events</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h4 style="margin-top:0;color:#fff;">Connect</h4>
+        <div class="social-icons" aria-label="Social links">
+          <a href="https://youtube.com/@omkareshwardas?si=SriptPGJpg0oWGui" target="_blank" rel="noopener noreferrer" title="YouTube"><i class="bi bi-youtube"></i> YouTube</a><br>
+          <a href="https://www.facebook.com/gaugovindseva/" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="bi bi-facebook"></i> Facebook</a><br>
+          <a href="https://www.instagram.com/omkareshwardas_official/" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="bi bi-instagram"></i> Instagram</a>
+        </div>
+      </div>
+
+      <div class="footer-col footer-qr" style="text-align:center;">
+        <h4 style="margin-top:0;color:#fff;">Join our WhatsApp group</h4>
+        <a href="https://chat.whatsapp.com/GWJ047kEOcb7XfualOOpdS?mode=wwt" target="_blank" rel="noopener noreferrer" title="Join WhatsApp group">
+          <img src="assets/img/WhatsAppQR.jpeg" alt="WhatsApp group QR code - Join Omkareshwar Das group" />
+        </a>
+        <div style="margin-top:8px;"><a href="https://chat.whatsapp.com/GWJ047kEOcb7XfualOOpdS?mode=wwt" target="_blank" rel="noopener noreferrer" style="color:#fff;text-decoration:underline;">Click/tap to join</a></div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:1rem;color:#fff8ea;">&copy; <span id="year"></span> Omkareshwar Das — All Rights Reserved</div>
+  </footer>
+
+
+
+
+  <!-- Lightbox Script -->
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({ selector: '.glightbox' });
+  </script>
+
+  <script>
+    document.getElementById('kirtanForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const type = document.getElementById('kirtan-type').value.trim();
+      const details = document.getElementById('details').value.trim();
+
+      const msg = `Hare Krishna! 🙏\nI would like to book a Kirtan.\n\n👤 Name: ${name}\n📞 Contact: ${phone}\n📧 Email: ${email || 'N/A'}\n🎶 Kirtan Type: ${type}\n📍 Details: ${details}`;
+      const encodedMsg = encodeURIComponent(msg);
+      const waURL = `https://wa.me/918197317345?text=${encodedMsg}`;
+      window.open(waURL, '_blank');
+    });
+  </script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quotes by Omkareshwar Das Ji</title>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Hind', sans-serif;
+      background: url('assets/img/background/quotes.jpg') no-repeat center center/cover;
+      color: #fff;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      color: #ffe4b3;
+      margin-bottom: 40px;
+    }
+
+    .quotes-grid {
+      display: grid;
+      /* two columns on desktop */
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+      /* ensure all rows have equal height so cards align */
+      grid-auto-rows: 1fr;
+      align-items: stretch;
+    }
+
+    .quote-card {
+      background-color: #1d1f20;
+      padding: 30px 25px;
+      border-radius: 20px 0 20px 0;
+      position: relative;
+      font-size: 18px;
+      line-height: 1.7;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* keep author pinned to bottom */
+      min-height: 200px; /* give cards a consistent minimum height */
+    }
+
+    .quote-card::before {
+      content: "❝";
+      font-size: 40px;
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      color: #d2b48c;
+    }
+
+    .quote-card::after {
+      content: "❞";
+      font-size: 40px;
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      color: #d2b48c;
+    }
+
+    .quote-author {
+      margin-top: 20px;
+      font-weight: 600;
+      font-size: 16px;
+      text-align: right;
+      color: #ffd27f;
+    }
+
+    @media screen and (max-width: 500px) {
+      .quote-card {
+        font-size: 16px;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+    }
+
+    /* tablet and small desktops: 2 columns -> 1 column on narrow screens */
+    @media screen and (max-width: 900px) {
+      .quotes-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>🌼 श्री ओंकारेश्वर दास जी के प्रेरणादायक वचन 🌼</h1>
+
+    <div class="quotes-grid">
+
+      <div class="quote-card">
+           वास्तव में इंसान ठाकुर जी के व्याकुल हो ऐसा नहीं हो सकता। ठाकुर जी व्याकुल होते हैं तब वह इंसान व्याकुल होता है, अन्यथा इंसान में सामर्थ्य नहीं है।
+        <div class="quote-author">– श्री ओंकारेश्वर दास जी</div>
+      </div>
+
+      <div class="quote-card">
+           भजन प्रदर्शन का विषय नहीं है। प्रदर्शन में हरि का दर्शन सम्भव नहीं है। अगर हरि दर्शन करना हो तो भजन का प्रदर्शन न करें।
+        <div class="quote-author">– श्री ओंकारेश्वर दास जी</div>
+      </div>
+
+      <div class="quote-card">
+            क्षमा करने वाला सबसे बड़ा होता है। द्रौपदी ने अपने पाँच पुत्रों की हत्या करने वाले अश्वत्थामा को क्षमा कर दिया। क्षमा दान बक़हत बड़ा दान है।
+        <div class="quote-author">– श्री ओंकारेश्वर दास जी</div>
+      </div>
+
+      <div class="quote-card">
+            सेवा वह नहीं जो दिखाने के लिए की जाए, सेवा वह है जो निस्वार्थ भाव से प्रभु को अर्पित की जाए।
+        <div class="quote-author">– श्री ओंकारेश्वर दास जी</div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

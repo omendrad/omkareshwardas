@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ask Guruji | Shri Omkareshwar Das Ji</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff9f0 url('assets/img/background/qa.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      color: #1a1a1a;
+    }
+
+    .section {
+      max-width: 900px;
+      margin: 60px auto;
+      background: white;
+      border-radius: 20px;
+      padding: 40px 30px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 10px;
+      color: #1a1a1a;
+    }
+
+    p.description {
+      text-align: center;
+      font-size: 17px;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    form label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #333;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #fefefe;
+      box-sizing: border-box;
+    }
+
+    button {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #e36111;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #c84d0c;
+    }
+
+    @media (max-width: 600px) {
+      .section {
+        padding: 25px 20px;
+        margin: 30px 10px;
+      }
+
+      h2 {
+        font-size: 26px;
+      }
+    }
+	.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: orange;
+}
+
+.nav-link.active {
+  color: orange;
+}
+
+  </style>
+</head>
+<body>
+<!-- Navbar -->
+<header style="background-color: #2d2b2b; padding: 10px 0;">
+  <nav style="max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; font-family: 'Segoe UI', sans-serif;">
+    <div style="color: white; font-size: 26px; font-weight: bold;">Omkareshwar Das</div>
+    <ul style="list-style: none; display: flex; gap: 24px; margin: 0; padding: 0;">
+      <li><a href="index.html" class="nav-link active">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="services.html" class="nav-link">Services</a></li>
+      <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+      <li><a href="donation.html" class="nav-link">Donation</a></li>
+      <li><a href="bookkatha.html" class="nav-link">Book Katha</a></li>
+	  <li><a href="pooja.html" class="nav-link">Pooja Booking</a></li>
+      <li><a href="prasadam.html" class="nav-link">Prasadam</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <div class="section">
+    <h2>📩 Ask Guruji</h2>
+    <p class="description">Have a question about life, devotion, or scriptures? Submit it here — selected questions will be answered by Omkareshwar Das Ji.</p>
+
+    <form onsubmit="submitToWhatsApp(event)">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" required>
+
+      <label for="question">Your Question</label>
+      <textarea id="question" rows="5" required></textarea>
+
+      <button type="submit">Send via WhatsApp</button>
+    </form>
+  </div>
+
+  <script>
+    function submitToWhatsApp(event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const question = document.getElementById('question').value.trim();
+      const message = `Ask Guruji Submission:\n\nName: ${name}\nQuestion: ${question}`;
+      const phone = "8197317345"; // change this to your WhatsApp number (no + symbol)
+      const link = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+      window.open(link, '_blank');
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Omkareshwar Das Ji</title>
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('assets/img/background/gallery-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    .header {
+      background-color: #2d2b2b;
+      padding: 20px 0;
+    }
+.navbar {
+  display: flex;
+  justify-content: flex-start;  /* keeps logo + menu together */
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  gap: 40px;  /* adjust space between logo and menu */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;  /* spacing between menu items */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+.logo {
+  padding-left: 20px;   /* adjust as needed */
+}
+header .container {
+  padding-left: 90px !important;  /* increase or adjust */
+}
+
+
+    .navbar a.active,
+    .navbar a:hover {
+      color: orange;
+    }
+
+    h1.page-title {
+      text-align: center;
+      /* reduced padding/margins to remove large whitespace above/below the heading */
+      margin: 0.5rem 0;
+      padding: 12px 0;
+      font-size: 36px;
+      color: #222;
+      font-weight:700;
+    }
+
+    .gallery-section {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    h2.category-heading {
+      font-size: 1.5rem;
+      color: #e36111;
+      border-bottom: 2px solid #ffc69c;
+      padding-bottom: 0.5rem;
+      margin-top: 2rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.03);
+    }
+
+    /* Footer styling is provided globally in assets/css/main.css (.site-footer) */
+  </style>
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+   <header id="header" class="header header-visible d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between align-items-center" style="width: 100%; padding: 0 20px; box-sizing: border-box;">
+      <div>
+        <h3 style="margin: 0; color: #fff;">Omkareshwar Das</h3>
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul style="list-style: none; display: flex; gap: 20px; margin: 0; padding: 0;">
+          <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+                    <li><a class="nav-link scrollto active" href="upcoming-events.html">Upcoming Events</a></li>
+
+          <li><a class="nav-link scrollto" href="services.html">Services</a></li>
+          <li><a class="nav-link scrollto" href="gallery.html">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="donation.html">Donation</a></li>
+          <li><a class="nav-link scrollto" href="bookkatha.html">Book Katha</a></li>
+          <li><a class="nav-link scrollto" href="pooja.html">Pooja Booking</a></li>
+          <li><a class="nav-link scrollto" href="Prasadam.html">Prasadam</a></li>
+          <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Page Heading -->
+  <h1 class="page-title">Gallery</h1>
+
+  <section class="gallery-section">
+    <h2 class="category-heading">Katha Moments</h2>
+    <div class="gallery-grid">
+      <img src="assets/img/gallery/katha6.jpeg" alt="Katha Moment 1">
+      <img src="assets/img/gallery/katha1.jpeg" alt="Katha Moment 2">
+      <img src="assets/img/gallery/katha3.jpeg" alt="Katha Moment 3">
+    </div>
+
+    <h2 class="category-heading">Gau Seva</h2>
+    <div class="gallery-grid">
+      <img src="assets/img/gallery/gau1.jpeg" alt="Gau Seva 1">
+      <img src="assets/img/gallery/gau2.jpeg" alt="Gau Seva 2">
+      <img src="assets/img/gallery/gau3.png" alt="Gau Seva 3">
+    </div>
+
+    <h2 class="category-heading">Janmashtami Celebrations</h2>
+    <div class="gallery-grid">
+      <img src="assets/img/gallery/janamastimi1.jpeg" alt="Janmashtami 1">
+      <img src="assets/img/gallery/janamastimi2.jpeg" alt="Janmashtami 2">
+      <img src="assets/img/gallery/janamastimi3.jpeg" alt="Janmashtami 3">
+    </div>
+
+
+    <h2 class="category-heading">Gaur Purnima</h2>
+    <div class="gallery-grid">
+      <img src="assets/img/gallery/gaur6.png" alt="Gaur Purnima 1">
+      <img src="assets/img/gallery/gaur3.jpeg" alt="Gaur Purnima 2">
+      <img src="assets/img/gallery/gaur5.png" alt="Gaur Purnima 3">
+    </div>
+  </section>
+
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="footer-container">
+      <div class="footer-col footer-brand">
+        <div class="footer-logo">Omkareshwar Das</div>
+        <div class="footer-contact">
+          <p><strong>Contact:</strong> <a href="tel:8197317345" style="color:#fff;text-decoration:none;">8197317345</a></p>
+          <p><strong>Address:</strong> HARE KRISHNA JAGANNATH TEMPLE, 1260, 9th Cross Rd, opp. Sangeetha Mobiles, Ananth Nagar Phase 2, Phase 1, Kammasandra, Electronic City, Bengaluru, Karnataka 560100</p>
+        </div>
+      </div>
+
+      <div class="footer-col footer-links">
+        <h4 style="margin-top:0;color:#fff;">Quick links</h4>
+        <p><a href="index.html#hero">Home</a></p>
+        <p><a href="index.html#about">About</a></p>
+        <p><a href="index.html#services">Services</a></p>
+        <p><a href="upcoming-events.html">Upcoming Events</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h4 style="margin-top:0;color:#fff;">Connect</h4>
+        <div class="social-icons" aria-label="Social links">
+          <a href="https://youtube.com/@omkareshwardas?si=SriptPGJpg0oWGui" target="_blank" rel="noopener noreferrer" title="YouTube"><i class="bi bi-youtube"></i> YouTube</a><br>
+          <a href="https://www.facebook.com/gaugovindseva/" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="bi bi-facebook"></i> Facebook</a><br>
+          <a href="https://www.instagram.com/omkareshwardas_official/" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="bi bi-instagram"></i> Instagram</a>
+        </div>
+      </div>
+
+      <div class="footer-col footer-qr" style="text-align:center;">
+        <h4 style="margin-top:0;color:#fff;">Join our WhatsApp group</h4>
+        <a href="https://chat.whatsapp.com/GWJ047kEOcb7XfualOOpdS?mode=wwt" target="_blank" rel="noopener noreferrer" title="Join WhatsApp group">
+          <img src="assets/img/WhatsAppQR.jpeg" alt="WhatsApp group QR code - Join Omkareshwar Das group" />
+        </a>
+        <div style="margin-top:8px;"><a href="https://chat.whatsapp.com/GWJ047kEOcb7XfualOOpdS?mode=wwt" target="_blank" rel="noopener noreferrer" style="color:#fff;text-decoration:underline;">Click/tap to join</a></div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:1rem;color:#fff8ea;">&copy; <span id="year"></span> Omkareshwar Das — All Rights Reserved</div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up-short" style="font-size:22px;"></i></button>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

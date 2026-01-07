@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bulk Order Menu | Omkareshwar Das</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('assets/img/background/foodbg.jpg') no-repeat center center/cover;
+      margin: 0;
+      padding: 0;
+      color: #2e2e2e;
+    }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(8px);
+      min-height: 100vh;
+      padding: 50px 20px;
+    }
+
+   
+
+    h1 {
+      font-size: 40px;
+      color: #d44f00;
+      margin-bottom: 10px;
+      border-spacing: 120px;
+    }
+h1 {
+  margin-top: 120px !important;
+}
+
+    .menu-category {
+      margin: 50px 0 20px;
+      font-size: 26px;
+      color: #d44f00;
+      border-bottom: 2px solid #d44f00;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    ul.menu-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+      text-align: left;
+      columns: 2;
+      gap: 40px;
+    }
+
+    ul.menu-list li {
+      font-size: 18px;
+      padding: 8px 0;
+      border-bottom: 1px dashed #ddd;
+    }
+
+    .menu-price {
+      float: right;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .whatsapp-button {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 14px 30px;
+      font-size: 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1DA851;
+    }
+
+    @media (max-width: 768px) {
+      ul.menu-list {
+        columns: 1;
+      }
+
+      .container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .menu-category {
+        font-size: 22px;
+      }
+    }
+	.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: orange;
+}
+
+.nav-link.active {
+  color: orange;
+}
+
+  </style>
+
+   <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>omkareshwar_das</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+ 
+</head>
+<body>
+
+ <header id="header" class="header header-visible d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between align-items-center" style="width: 100%; padding: 0 20px; box-sizing: border-box;">
+      <div>
+        <h3 style="margin: 0; color: #fff;">Omkareshwar Das</h3>
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul style="list-style: none; display: flex; gap: 20px; margin: 0; padding: 0;">
+          <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+          <li><a class="nav-link scrollto active" href="upcoming-events.html">Upcoming Events</a></li>
+          <li><a class="nav-link scrollto" href="services.html">Services</a></li>
+          <li><a class="nav-link scrollto" href="gallery.html">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="donation.html">Donation</a></li>
+          <li><a class="nav-link scrollto" href="bookkatha.html">Book Katha</a></li>
+          <li><a class="nav-link scrollto" href="pooja.html">Pooja Booking</a></li>
+          <li><a class="nav-link scrollto" href="Prasadam.html">Prasadam</a></li>
+          <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+  <div class="overlay">
+    <div class="container">
+      <h1>🍛 Bulk Order Menu</h1>
+
+      <div class="menu-category">Subziyan</div>
+      <ul class="menu-list">
+        <li>Matar Paneer <span class="menu-price">₹180</span></li>
+        <li>Shahi Paneer <span class="menu-price">₹180</span></li>
+        <li>Kadhi Paneer <span class="menu-price">₹200</span></li>
+        <li>Shahi Corn Paneer <span class="menu-price">₹200</span></li>
+        <li>Daal Makhni <span class="menu-price">₹180</span></li>
+        <li>Dal Tadka <span class="menu-price">₹120</span></li>
+        <li>Paneer Butter Masala <span class="menu-price">₹180</span></li>
+        <li>Lauki Kofte <span class="menu-price">₹160</span></li>
+        <li>Kadhi Pakoda <span class="menu-price">₹140</span></li>
+        <li>Malaai Kofte <span class="menu-price">₹220</span></li>
+        <li>Paneer Bhurji <span class="menu-price">₹250</span></li>
+      </ul>
+
+      <div class="menu-category">Masala Dry Veg</div>
+      <ul class="menu-list">
+        <li>Aloo Gobhi Matar <span class="menu-price">₹120</span></li>
+        <li>Mix Veg <span class="menu-price">₹150</span></li>
+        <li>Masala Bhindi <span class="menu-price">₹150</span></li>
+        <li>Aloo Tamatar <span class="menu-price">₹120</span></li>
+        <li>Aloo Palak <span class="menu-price">₹120</span></li>
+        <li>Baingan Bharta <span class="menu-price">₹120</span></li>
+        <li>Stuffed Karela <span class="menu-price">₹140</span></li>
+        <li>Stuffed Capsicum <span class="menu-price">₹140</span></li>
+      </ul>
+
+      <div class="menu-category">Chinese Special</div>
+      <ul class="menu-list">
+        <li>Gobhi Manchurian <span class="menu-price">₹140</span></li>
+        <li>Veg Manchurian <span class="menu-price">₹140</span></li>
+        <li>Momos (10 pcs) <span class="menu-price">₹100</span></li>
+        <li>Veg Noodles <span class="menu-price">₹130</span></li>
+        <li>Veg Pasta <span class="menu-price">₹140</span></li>
+      </ul>
+
+      <div class="menu-category">Aata Roti (per pc)</div>
+      <ul class="menu-list">
+        <li>Roti / Poori <span class="menu-price">₹10</span></li>
+        <li>Masala Poori <span class="menu-price">₹10</span></li>
+        <li>Plain Paratha <span class="menu-price">₹20</span></li>
+        <li>Aloo Paratha (2 pc) <span class="menu-price">₹100</span></li>
+        <li>Gobhi Paratha (2 pc) <span class="menu-price">₹100</span></li>
+        <li>Carrot Paratha (2 pc) <span class="menu-price">₹100</span></li>
+        <li>Beetroot Paratha (2 pc) <span class="menu-price">₹100</span></li>
+        <li>Paneer Paratha (2 pc) <span class="menu-price">₹150</span></li>
+        <li>Sattu Paratha (2 pc) <span class="menu-price">₹150</span></li>
+      </ul>
+
+      <div class="menu-category">Raita</div>
+      <ul class="menu-list">
+        <li>Boondi Raita <span class="menu-price">₹80</span></li>
+        <li>Kheera Raita <span class="menu-price">₹90</span></li>
+        <li>Lauki Raita <span class="menu-price">₹120</span></li>
+        <li>Mix Veg Raita <span class="menu-price">₹120</span></li>
+        <li>Buttermilk <span class="menu-price">₹15</span></li>
+      </ul>
+
+      <div class="menu-category">Rice (Basmati)</div>
+      <ul class="menu-list">
+        <li>Plain Rice <span class="menu-price">₹100</span></li>
+        <li>Jeera Rice <span class="menu-price">₹110</span></li>
+        <li>Matar Pulao <span class="menu-price">₹120</span></li>
+        <li>Curd Rice <span class="menu-price">₹110</span></li>
+        <li>Veg Pulao <span class="menu-price">₹140</span></li>
+        <li>Veg Biryani <span class="menu-price">₹150</span></li>
+        <li>Kashmiri Pulao <span class="menu-price">₹150</span></li>
+      </ul>
+
+      <div class="menu-category">Sweet (per plate)</div>
+      <ul class="menu-list">
+        <li>Gulab Jamun <span class="menu-price">₹25</span></li>
+        <li>Rice Kheer <span class="menu-price">₹100</span></li>
+        <li>Seviyan Kheer <span class="menu-price">₹100</span></li>
+        <li>Lauki Kheer <span class="menu-price">₹120</span></li>
+        <li>Gajar Halwa <span class="menu-price">₹150</span></li>
+        <li>Sooji Halwa <span class="menu-price">₹100</span></li>
+        <li>Aata Halwa <span class="menu-price">₹100</span></li>
+        <li>Dryfruits Kheer <span class="menu-price">₹200</span></li>
+      </ul>
+
+      <div class="menu-category">South Indian</div>
+      <ul class="menu-list">
+        <li>Idly (6 pcs) <span class="menu-price">₹80</span></li>
+        <li>Masala Dosa (2 pcs) <span class="menu-price">₹100</span></li>
+        <li>Paneer Dosa (2 pcs) <span class="menu-price">₹120</span></li>
+        <li>Uttappam (2 pcs) <span class="menu-price">₹90</span></li>
+        <li>Vada (1 pc) <span class="menu-price">₹20</span></li>
+        <li>Appe (8 pcs) <span class="menu-price">₹80</span></li>
+      </ul>
+
+      <div class="menu-category">Thalis (Customizable, Minimum 20 Plates)</div>
+      <ul class="menu-list">
+        <li><strong>Silver Thali</strong> – Chhole, Mix Veg, Boondi Raita, Plain Rice, Poori, Papad, One Sweet <span class="menu-price">₹199</span></li>
+        <li><strong>Gold Thali</strong> – Matar Paneer, Mix Veg, Daal Fry, Cucumber Raita, Pulao Rice, Poori, Papad, One Sweet <span class="menu-price">₹299</span></li>
+        <li><strong>Diamond Thali</strong> – Shahi Paneer, Mix Veg, Daal Fry, Kadhi Pakoda, Mix Veg Raita, Veg Biryani, Jeera Rice, Poori, Papad, Two Sweets <span class="menu-price">₹399</span></li>
+      </ul>
+
+      <div class="menu-category">Book via WhatsApp</div>
+<p style="font-size: 18px;">
+  Fill the form below to book your bulk order. You will be redirected to WhatsApp with your details.
+</p>
+
+<form id="bookingForm" onsubmit="return sendToWhatsApp()" style="text-align: left; max-width: 600px; margin: auto;">
+  <label><strong>Name:</strong></label><br>
+  <input type="text" id="name" required style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
+
+  <label><strong>Mobile Number:</strong></label><br>
+  <input type="text" id="mobile" required style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
+
+  <label><strong>Thali Type:</strong></label><br>
+  <select id="thali" required style="width: 100%; padding: 8px; margin-bottom: 10px;">
+    <option value="">-- Select Thali --</option>
+    <option value="Silver Thali">Silver Thali</option>
+    <option value="Gold Thali">Gold Thali</option>
+    <option value="Diamond Thali">Diamond Thali</option>
+    <option value="Custom Thali">Custom Thali</option>
+  </select><br>
+
+  <label><strong>Quantity (min 20):</strong></label><br>
+  <input type="number" id="quantity" min="20" required style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
+
+  <label><strong>Customize Your Thali (Write items from menu):</strong></label><br>
+  <textarea id="customItems" placeholder="E.g., Paneer Butter Masala, Jeera Rice, Gulab Jamun" rows="3" style="width: 100%; padding: 8px; margin-bottom: 10px;"></textarea><br>
+
+  <label><strong>Additional Message (optional):</strong></label><br>
+  <textarea id="message" rows="2" placeholder="Any note or request..." style="width: 100%; padding: 8px; margin-bottom: 20px;"></textarea><br>
+
+  <button type="submit" class="whatsapp-button">📲 Send via WhatsApp</button>
+</form>
+
+    </div>
+  </div>
+  <script>
+  function sendToWhatsApp() {
+    const name = document.getElementById("name").value.trim();
+    const mobile = document.getElementById("mobile").value.trim();
+    const thali = document.getElementById("thali").value;
+    const quantity = document.getElementById("quantity").value.trim();
+    const customItems = document.getElementById("customItems").value.trim();
+    const extraMsg = document.getElementById("message").value.trim();
+
+    const whatsappNumber = "919819731735";
+    let msg = `Hare Krishna!\n\n📛 Name: ${name}\n📞 Mobile: ${mobile}\n🍱 Thali Type: ${thali}\n🔢 Quantity: ${quantity}`;
+
+    if (customItems) {
+      msg += `\n📝 Custom Items: ${customItems}`;
+    }
+    if (extraMsg) {
+      msg += `\n💬 Note: ${extraMsg}`;
+    }
+
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(msg)}`;
+    window.open(url, '_blank');
+    return false;
+  }
+</script>
+
+</body>
+</html>
